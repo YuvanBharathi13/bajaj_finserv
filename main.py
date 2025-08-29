@@ -96,7 +96,3 @@ async def process_data(request: RequestData):
 @app.get("/")
 def read_root():
     return {"status": "API is running. Use the /bfhl endpoint with a POST request."}
-
-if __name__ == "__main__" :
-    import uvicorn
-    uvicorn.run(app)
